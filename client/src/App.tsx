@@ -11,7 +11,10 @@ const Container = styled.div`
 export const App = () => {
   return (
     <Container>
-      <h1>React TypeScript {process.env.NODE_ENV}</h1>
+      <h1>
+        React TypeScript {process.env.NODE_ENV}
+        {` ${process.env.name}`}
+      </h1>
       <img src={IMAGE} alt="" width="300" height="200"></img>
       <img src={LOGO} alt="" width="300" height="200"></img>
     </Container>
