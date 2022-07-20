@@ -5,6 +5,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     hot: true,
+    open: true,
   },
   devtool: 'eval-source-map',
   plugins: [
