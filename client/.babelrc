@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ]
+}
+//preset-env 브라우저 환경에 맞게 해석할 수 있게 해주는 역할
+//preset-react jsx를 읽을 수 있게 해주는 역할
+//plugin-transform-runtime es6등 최신 문법에 새로 추가된 전역 객체/함수를 transpile만으로 해결이 안되서 추가하주는 것이라 함
