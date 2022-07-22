@@ -15,7 +15,9 @@
       {
         "regenerator": true
       }
-    ]
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
   ]
 }
 //preset-env 브라우저 환경에 맞게 해석할 수 있게 해주는 역할
