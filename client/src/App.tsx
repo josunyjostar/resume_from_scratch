@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import GlobalStyle from "./styles/GlobalStyle";
 import Theme from "./styles/Theme";
 import styled, { ThemeProvider } from "styled-components";
 import Resume from "./page/Resume";
+import data from "./resources/resume";
 
 const RootLayout = styled.div`
   /* width: 100vw; */
@@ -19,7 +20,7 @@ function App() {
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
       <RootLayout>
-        <Resume></Resume>
+        <Resume data={data} />
       </RootLayout>
     </ThemeProvider>
   );
