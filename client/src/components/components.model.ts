@@ -13,3 +13,8 @@ export interface ContactProps {
 export interface IntroProps {
   data: string[];
 }
+
+export interface SkillsProps {
+  data: Array<string[]>;
+  parenthesis: string;
+}

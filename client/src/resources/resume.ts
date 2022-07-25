@@ -22,9 +22,20 @@ const introduction = {
   data: [intro1, intro2, intro3],
 };
 
+const frontend: string[] = ["JavaScript", "React", "Reduc", "Zustand", "Styled-Components", "HTML5", "Css3", "Webpack", "TypeScript", "Babel"];
+const backend: string[] = ["Node.js", "Express.js", "Jwt", "Cookie", "Mysql"];
+const deploy: string[] = ["AWS EC2", "S3", "RDS", "CloudFront", "Route53"];
+const etc: string[] = ["Git", "VS Code"];
+const techStack: Array<string[]> = [frontend, backend, deploy, etc];
+const skills = {
+  data: techStack,
+  parenthesis: "상기 단순 기술 나열은 요약 정도로만 봐주시고 자세한 부분은 포트폴리오에서 봐주시면 감사하겠습니다.",
+};
+
 const data = new Map<string, object>();
 data.set("header", header);
 data.set("contact", contact);
 data.set("introduction", introduction);
+data.set("skills", skills);
 
 export default data;
