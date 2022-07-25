@@ -1,19 +1,17 @@
 const theme = {
   //color
-  mainColor: "#2d2d2d",
-  subColor: "#f4f4f4",
-  btnBGColor: "Lavender",
+  bgColor: "#ddd",
+  resumeBgColor: "#f4f4f4",
+  btnBgColor: "Lavender",
   subjectColor: "#296caa",
   //font
-  subjectFontSize: "1.4rem",
   fontSize: "1.2rem",
+  subjectFontSize: "1.4rem",
   btnFontSize: "1rem",
   //style
   borderRadius: "5px",
-  contentPaddingL: "2rem",
-  contentPaddingR: "2rem",
-  containerPaddingLR: "4rem",
-  webWidth: "1200px",
+  containerPaddingLR: "60px",
+  webWidth: "860px",
 };
 
 export default theme;

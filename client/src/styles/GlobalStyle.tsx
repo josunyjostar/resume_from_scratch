@@ -13,13 +13,8 @@ html {
 
 body {
   color: #222;
-
   margin: 0;
   padding: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
   /* border: 10px solid blue; */
 }
 
