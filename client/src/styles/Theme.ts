@@ -1,16 +1,18 @@
 const theme = {
   //color
-  bgColor: "#ddd",
-  resumeBgColor: "#f4f4f4",
+  bgColor: "#eee",
+  resumeBgColor: "#fff",
   btnBgColor: "Lavender",
   subjectColor: "#296caa",
   //font
-  fontSize: "1.2rem",
-  subjectFontSize: "1.4rem",
-  btnFontSize: "1rem",
+  fontSize: "25px",
+  subjectFontSize: "20px",
+  btnFontSize: "15px",
   //style
   borderRadius: "5px",
-  containerPaddingLR: "60px",
+  containerPaddingLR_web: "60px",
+  containerPaddingLR_tablet: "30px",
+  containerPaddingLR_mobile: "15px",
   webWidth: "860px",
 };
 
