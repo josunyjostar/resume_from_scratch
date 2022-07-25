@@ -2,7 +2,7 @@
 
 개발 환경 초기 셋팅이라는건
 
-- Typescript, babel, webpack, ESLint, prettier 셋팅을 가르킴
+- typescript, babel, webpack, ESLint, prettier, react 셋팅을 가르킴
 
 [Usage]
 
