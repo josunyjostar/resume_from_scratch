@@ -1,22 +1,21 @@
-import styled from 'styled-components';
-import IMAGE from './hwasun.jpg';
-import LOGO from './logo.svg';
+import { useState } from "react";
+import GlobalStyle from "./styles/GlobalStyle";
+import Theme from "./styles/Theme";
+import styled, { ThemeProvider } from "styled-components";
 
-const Container = styled.div`
-  h1 {
-    color: orange;
-  }
+const RootLayout = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  /* position: relative; */
 `;
 
-export const App = () => {
+function App() {
   return (
-    <Container>
-      <h1>
-        React TypeScript {process.env.NODE_ENV}
-        {` ${process.env.name}`}
-      </h1>
-      <img src={IMAGE} alt="" width="300" height="200"></img>
-      <img src={LOGO} alt="" width="300" height="200"></img>
-    </Container>
+    <ThemeProvider theme={Theme}>
+      <GlobalStyle />
+      <RootLayout></RootLayout>
+    </ThemeProvider>
   );
-};
+}
+
+export default App;
