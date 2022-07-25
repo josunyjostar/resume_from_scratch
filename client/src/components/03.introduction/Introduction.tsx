@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Inner from "../00.common/Inner";
+import Inner from "../00.common/Inner.styled";
 
 const Container = styled.div`
   border: 1px solid red;

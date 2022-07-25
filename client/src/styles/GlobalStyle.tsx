@@ -18,7 +18,7 @@ body {
   /* border: 10px solid blue; */
 }
 
-dl, menu, li {
+dl, menu {
     list-style: none;
 }
 

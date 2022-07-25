@@ -1,5 +1,5 @@
 import { Header, Contact, Introduction, Skills, Portfolio, Career, Education } from "../components";
-import { HeaderProps } from "../components/components.model";
+import { HeaderProps, ContactProps } from "../components/components.model";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -7,6 +7,9 @@ const Container = styled.div`
   background-color: ${(props) => props.theme.resumeBgColor};
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   /* border: 3px solid yellow; */
+  section {
+    margin: 30px 0;
+  }
 
   @media (max-width: 767px) {
     display: block;
@@ -26,7 +29,7 @@ function Resume({ data }: Data) {
   return (
     <Container>
       <Header data={data.get("header")! as HeaderProps} />
-      <Contact />
+      <Contact data={data.get("contact")! as ContactProps} />
       <Introduction />
       <Skills />
       <Portfolio />

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Inner from "../00.common/Inner";
+import Inner from "../00.common/Inner.styled";
 import { HeaderProps } from "../components.model";
 
 const Container = styled.section`
@@ -12,7 +12,7 @@ const Container = styled.section`
 
   @media screen and (max-width: 767px) {
     h1 {
-      font-size: 18px;
+      font-size: 21px;
       margin-top: 15px;
       margin-bottom: 10px;
     }

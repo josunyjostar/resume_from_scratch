@@ -5,7 +5,7 @@ const Inner = styled.div`
   padding: 0 ${(props) => props.theme.containerPaddingLR_web};
 
   width: ${(props) => props.theme.webWidth};
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 
   @media (max-width: 767px) {
     width: inherit;
