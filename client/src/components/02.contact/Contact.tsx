@@ -2,7 +2,6 @@ import Inner from "../00.common/Inner.styled";
 import Hr from "../00.common/Hr.styled";
 import { ContactProps } from "../components.model";
 import Container from "./Contact.styled";
-
 interface Props {
   data: ContactProps;
 }

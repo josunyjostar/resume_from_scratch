@@ -10,3 +10,6 @@ export interface ContactProps {
   github_desc: string;
   blog: string;
 }
+export interface IntroProps {
+  data: string[];
+}

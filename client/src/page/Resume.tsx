@@ -1,5 +1,5 @@
 import { Header, Contact, Introduction, Skills, Portfolio, Career, Education } from "../components";
-import { HeaderProps, ContactProps } from "../components/components.model";
+import { HeaderProps, ContactProps, IntroProps } from "../components/components.model";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -30,7 +30,7 @@ function Resume({ data }: Data) {
     <Container>
       <Header data={data.get("header")! as HeaderProps} />
       <Contact data={data.get("contact")! as ContactProps} />
-      <Introduction />
+      <Introduction data={data.get("introduction")! as IntroProps} />
       <Skills />
       <Portfolio />
       <Career />

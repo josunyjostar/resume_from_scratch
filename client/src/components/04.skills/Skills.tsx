@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Inner from "../00.common/Inner.styled";
 
-const Container = styled.div`
+const Container = styled.section`
   border: 1px solid red;
 
   height: 30vh;

@@ -5,8 +5,10 @@ const theme = {
   btnBgColor: "Lavender",
   subjectColor: "#296caa",
   //font
-  fontSize: "25px",
-  subjectFontSize: "27px",
+  contentfontSize_web: "15px",
+  contentfontSize_tablet: "17px",
+  contentfontSize_mobile: "12px",
+  subjectFontSize_web: "27px",
   subjectFontSize_tablet: "25px",
   subjectFontSize_mobile: "19px",
   btnFontSize: "15px",

@@ -1,17 +1,25 @@
-import styled from "styled-components";
 import Inner from "../00.common/Inner.styled";
+import Hr from "../00.common/Hr.styled";
+import { IntroProps } from "../components.model";
+import Container from "./Intro.styled";
 
-const Container = styled.div`
-  border: 1px solid red;
+interface Props {
+  data: IntroProps;
+}
 
-  height: 30vh;
-`;
-
-function Introduction() {
+function Introduction({ data: { data } }: Props) {
   return (
     <Container>
       <Inner>
         <h2>Introduction</h2>
+        <Hr />
+        {data.map((v, i) => {
+          return (
+            <div key={i} className="desc">
+              {v}
+            </div>
+          );
+        })}
       </Inner>
     </Container>
   );
