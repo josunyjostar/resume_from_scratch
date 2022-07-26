@@ -18,3 +18,12 @@ export interface SkillsProps {
   data: Array<string[]>;
   parenthesis: string;
 }
+
+interface Career {
+  leftSection: { period: string };
+  rightSection: { name: string; team: string; desc: string[] };
+}
+
+export interface CareerProps {
+  data: Array<Career>;
+}

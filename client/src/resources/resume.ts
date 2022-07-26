@@ -32,10 +32,31 @@ const skills = {
   parenthesis: "상기 단순 기술 나열은 요약 정도로만 봐주시고 자세한 부분은 포트폴리오에서 봐주시면 감사하겠습니다.",
 };
 
+const career = {
+  data: [
+    {
+      leftSection: {
+        period: "2018.01 - 2019.01",
+      },
+
+      rightSection: {
+        name: "라이언게임즈",
+        team: "클라이언트 프로그래머",
+        desc: [
+          "소울워커(MORPG 게임)의 일본 라이브 서비스를 담당",
+          "한국에서 제공하는 서비스의 일부를 merge하고 패치로 만들어서 일본에 전달하고 생겨난 이슈에 대해 해결해주는 역할을 하였습니다.",
+          "사용했던 협업툴은 Jira, mecurial, svn 입니다.",
+        ],
+      },
+    },
+  ],
+};
+
 const data = new Map<string, object>();
 data.set("header", header);
 data.set("contact", contact);
 data.set("introduction", introduction);
 data.set("skills", skills);
+data.set("career", career);
 
 export default data;
