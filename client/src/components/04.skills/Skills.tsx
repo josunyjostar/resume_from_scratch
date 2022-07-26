@@ -3,6 +3,7 @@ import Hr from "../00.common/Hr.styled";
 import { SkillsProps } from "../components.model";
 import Container from "./Skills.styled";
 import { Component } from "react";
+import Validator from "../../utils/Validator";
 
 interface Props {
   data: SkillsProps;
@@ -15,25 +16,11 @@ enum SKILL {
   ETC,
 }
 
-interface ValidatorConfig {
-  [className: string]: {
-    [propsName: string]: string[];
-  };
-}
-
-const registeredValidators: ValidatorConfig = {};
-
-function Required(target: any, propName: string) {
-  registeredValidators[target.constructor.name] = {
-    ...registeredValidators[target.constructor.name],
-    [propName]: ["required"],
-  };
-}
-
 class Skills extends Component<Props> {
   private data: string[][];
-  @Required
+  @Validator.getInst().Required
   private parenthesis: string;
+
   constructor(props: Props) {
     super(props);
     this.data = props.data.data;
