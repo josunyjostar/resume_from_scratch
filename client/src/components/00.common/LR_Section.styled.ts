@@ -1,27 +1,26 @@
 import styled from "styled-components";
-import LR_Section from "../00.common/LR_Section.styled";
 
-const Container = styled(LR_Section)`
-  /* border: 1px solid red; */
-
+const LR_Section = styled.section`
   .content {
     display: flex;
-    /* border: 1px solid red; */
+    margin: 20px 0;
     .left {
       flex: 1;
-      /* border: 1px solid blue; */
+      /* border: 1px solid red; */
     }
     .right {
       flex: 6;
-      /* border: 1px solid blue; */
+      /* border: 1px solid red; */
       h6 {
         font-size: ${(props) => props.theme.h6FontSize_web};
         font-weight: bold;
       }
+
       p {
         margin-top: 7px;
         margin-bottom: 5px;
       }
+
       ul {
         padding-left: 25px;
         margin: 0;
@@ -38,16 +37,14 @@ const Container = styled(LR_Section)`
     font-size: ${(props) => props.theme.contentfontSize_mobile};
     padding: 0 5px;
     .content {
+      margin: 10px 0;
       display: flex;
-      /* border: 1px solid red; */
       .left {
         flex: 1;
-        /* border: 1px solid blue; */
       }
       .right {
         padding-left: 10px;
         flex: 4;
-        /* border: 1px solid blue; */
         h6 {
           font-size: ${(props) => props.theme.h6FontSize_mobile};
         }
@@ -66,4 +63,4 @@ const Container = styled(LR_Section)`
   }
 `;
 
-export default Container;
+export default LR_Section;
