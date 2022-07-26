@@ -17,6 +17,7 @@ enum SKILL {
 }
 
 class Skills extends Component<Props> {
+  @Validator.getInst().ArrayInitRequired
   private data: string[][];
   @Validator.getInst().Required
   private parenthesis: string;
@@ -44,6 +45,9 @@ class Skills extends Component<Props> {
     }
   }
   render() {
+    if (!Validator.getInst().validate(this)) {
+      return <div>Err : props 셋팅 확인 필요</div>;
+    }
     return (
       <Container>
         <Inner>
