@@ -52,11 +52,107 @@ const career = {
   ],
 };
 
+import { EducationProps } from "../components/components.model";
+
+const edu1: EducationProps = {
+  leftSection: { period: "2022.10 - 2022.04" },
+  rightSection: {
+    organization: "코드스테이츠 (Code States)",
+    subtitle: "Advanced software engineering, Immersive program (36기)",
+    desc: [
+      {
+        main: "Javascript 기반으로 풀스택 과정 학습",
+        sub: null,
+      },
+      {
+        main: "Html, Css, Styled-components, Dom, Linux, React, Git, Redux, NodeJs(http/https), Mysql, Docker",
+        sub: null,
+      },
+      {
+        main: "인증보안 기초(세션/토큰), AWS",
+        sub: null,
+      },
+      {
+        main: "초급 알고리즘 / 자료구조",
+        sub: null,
+      },
+      {
+        main: "협업 프로젝트 2회 진행",
+        sub: null,
+      },
+    ],
+  },
+};
+const edu2: EducationProps = {
+  leftSection: { period: "2016.06 - 2017.06" },
+  rightSection: {
+    organization: "쥬신게임아카데미",
+    subtitle: "c++ 게임 클라이언트 개발자 지망 과정",
+    desc: [
+      {
+        main: "JC언어 기초 / C++언어 기초 및 활용 / WindowsAPI",
+        sub: null,
+      },
+      {
+        main: "자료구조 / 디자인패턴",
+        sub: null,
+      },
+      {
+        main: "MFC / Software Rendering With DirectX SDK9 / Shader",
+        sub: null,
+      },
+      {
+        main: "개인 프로젝트 1회 / 기여도 100%",
+        sub: ["- MOMODORA : 2D 횡스크롤 액션게임 (1인/4주)", "- [유튜브 링크] https://www.youtube.com/watch?v=2PpYRbAbWbY"],
+      },
+      {
+        main: "팀 프로젝트 1회 / 기여도 25%",
+        sub: ["- 프리니 큐브 : 3D 그림자 퍼즐 게임 (4인/4주)", "- [유튜브 링크] https://www.youtube.com/watch?v=5TGV9zOoZu8"],
+      },
+    ],
+  },
+};
+const edu3: EducationProps = {
+  leftSection: { period: "2015.04 - 2015.07" },
+  rightSection: {
+    organization: "삼성 SDS 멀티캠퍼스",
+    subtitle: null,
+    desc: [
+      {
+        main: "C# / 유니티 엔진 과정",
+        sub: null,
+      },
+      {
+        main: "팀 프로젝트 1회",
+        sub: null,
+      },
+    ],
+  },
+};
+const edu4: EducationProps = {
+  leftSection: { period: "2005.03 - 2012.02" },
+  rightSection: {
+    organization: "청주대학교",
+    subtitle: null,
+    desc: [
+      {
+        main: "중어중문과 (졸업) 총평점 3.78/4.5",
+        sub: null,
+      },
+    ],
+  },
+};
+
+const education = {
+  data: [edu1, edu2, edu3, edu4],
+};
+
 const data = new Map<string, object>();
 data.set("header", header);
 data.set("contact", contact);
 data.set("introduction", introduction);
 data.set("skills", skills);
 data.set("career", career);
+data.set("education", education);
 
 export default data;

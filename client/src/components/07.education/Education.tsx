@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Inner from "../00.common/Inner.styled";
 import SubTitle from "../00.common/SubTitle";
 import Hr from "../00.common/Hr.styled";
+import { EducationProps } from "../components.model";
 
 const Container = styled.section`
   border: 1px solid red;
@@ -9,7 +10,11 @@ const Container = styled.section`
   height: 50vh;
 `;
 
-function Education() {
+interface Props {
+  data: EducationProps;
+}
+
+function Education({ data }: Props) {
   return (
     <Container>
       <Inner>
