@@ -52,9 +52,9 @@ const career = {
   ],
 };
 
-import { EducationProps } from "../components/components.model";
+import { Education } from "../components/components.model";
 
-const edu1: EducationProps = {
+const edu1: Education = {
   leftSection: { period: "2022.10 - 2022.04" },
   rightSection: {
     organization: "코드스테이츠 (Code States)",
@@ -83,14 +83,14 @@ const edu1: EducationProps = {
     ],
   },
 };
-const edu2: EducationProps = {
+const edu2: Education = {
   leftSection: { period: "2016.06 - 2017.06" },
   rightSection: {
     organization: "쥬신게임아카데미",
     subtitle: "c++ 게임 클라이언트 개발자 지망 과정",
     desc: [
       {
-        main: "JC언어 기초 / C++언어 기초 및 활용 / WindowsAPI",
+        main: "C언어 기초 / C++언어 기초 및 활용 / WindowsAPI",
         sub: null,
       },
       {
@@ -103,16 +103,16 @@ const edu2: EducationProps = {
       },
       {
         main: "개인 프로젝트 1회 / 기여도 100%",
-        sub: ["- MOMODORA : 2D 횡스크롤 액션게임 (1인/4주)", "- [유튜브 링크] https://www.youtube.com/watch?v=2PpYRbAbWbY"],
+        sub: { desc: ["- MOMODORA : 2D 횡스크롤 액션게임 (1인/4주)", "- [유튜브 링크] "], url: "https://www.youtube.com/watch?v=2PpYRbAbWbY" },
       },
       {
         main: "팀 프로젝트 1회 / 기여도 25%",
-        sub: ["- 프리니 큐브 : 3D 그림자 퍼즐 게임 (4인/4주)", "- [유튜브 링크] https://www.youtube.com/watch?v=5TGV9zOoZu8"],
+        sub: { desc: ["- 프리니 큐브 : 3D 그림자 퍼즐 게임 (4인/4주)", "- [유튜브 링크] "], url: "https://www.youtube.com/watch?v=5TGV9zOoZu8" },
       },
     ],
   },
 };
-const edu3: EducationProps = {
+const edu3: Education = {
   leftSection: { period: "2015.04 - 2015.07" },
   rightSection: {
     organization: "삼성 SDS 멀티캠퍼스",
@@ -129,7 +129,7 @@ const edu3: EducationProps = {
     ],
   },
 };
-const edu4: EducationProps = {
+const edu4: Education = {
   leftSection: { period: "2005.03 - 2012.02" },
   rightSection: {
     organization: "청주대학교",

@@ -11,6 +11,8 @@ const theme = {
   subjectFontSize_web: "27px",
   subjectFontSize_tablet: "25px",
   subjectFontSize_mobile: "19px",
+  h6FontSize_web: "20px",
+  h6FontSize_mobile: "15px",
   btnFontSize: "15px",
   //style
   borderRadius: "5px",

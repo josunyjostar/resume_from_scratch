@@ -28,7 +28,11 @@ export interface CareerProps {
   data: Array<Career>;
 }
 
-export interface EducationProps {
+export interface Education {
   leftSection: { period: string };
-  rightSection: { organization: string; subtitle: string | null; desc: { main: string; sub: string | string[] | null }[] };
+  rightSection: { organization: string; subtitle: string | null; desc: { main: string; sub?: { desc: string[]; url?: string } | null }[] };
+}
+
+export interface EducationProps {
+  data: Array<Education>;
 }

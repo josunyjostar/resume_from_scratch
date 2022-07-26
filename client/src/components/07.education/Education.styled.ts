@@ -1,25 +1,25 @@
 import styled from "styled-components";
 const Container = styled.section`
-  /* border: 1px solid red; */
-
   .content {
     display: flex;
-    /* border: 1px solid red; */
+    margin: 20px 0;
     .left {
       flex: 1;
-      /* border: 1px solid blue; */
+      /* border: 1px solid red; */
     }
     .right {
       flex: 6;
-      /* border: 1px solid blue; */
+      /* border: 1px solid red; */
       h6 {
         font-size: ${(props) => props.theme.h6FontSize_web};
         font-weight: bold;
       }
+
       p {
         margin-top: 7px;
         margin-bottom: 5px;
       }
+
       ul {
         padding-left: 25px;
         margin: 0;
@@ -29,6 +29,10 @@ const Container = styled.section`
           line-height: 1.4;
         }
       }
+
+      li span:first-child {
+        display: block;
+      }
     }
   }
 
@@ -36,16 +40,14 @@ const Container = styled.section`
     font-size: ${(props) => props.theme.contentfontSize_mobile};
     padding: 0 5px;
     .content {
+      margin: 10px 0;
       display: flex;
-      /* border: 1px solid red; */
       .left {
         flex: 1;
-        /* border: 1px solid blue; */
       }
       .right {
         padding-left: 10px;
         flex: 4;
-        /* border: 1px solid blue; */
         h6 {
           font-size: ${(props) => props.theme.h6FontSize_mobile};
         }

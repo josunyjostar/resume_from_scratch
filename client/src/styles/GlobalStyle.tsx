@@ -23,7 +23,7 @@ dl, menu {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal; font-size: 28px; 
+    font-weight: normal; font-size: 20px; 
     margin: 0;
     padding: 0;
 }
