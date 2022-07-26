@@ -1,11 +1,5 @@
 import styled from "styled-components";
 const Container = styled.section`
-  h2 {
-    font-size: ${(props) => props.theme.subjectFontSize_web};
-    color: ${(props) => props.theme.subjectColor};
-    font-weight: bold;
-  }
-
   .part {
     margin-top: 10px;
     .category {
@@ -25,10 +19,6 @@ const Container = styled.section`
 
   @media screen and (max-width: 767px) {
     font-size: ${(props) => props.theme.contentfontSize_mobile};
-    h2 {
-      font-size: ${(props) => props.theme.subjectFontSize_mobile};
-    }
-
     .part {
       margin-top: 6px;
     }
@@ -43,10 +33,6 @@ const Container = styled.section`
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: ${(props) => props.theme.contentfontSize_tablet};
-    h2 {
-      font-size: ${(props) => props.theme.subjectFontSize_tablet};
-    }
-
     .part {
       margin-top: 8px;
     }

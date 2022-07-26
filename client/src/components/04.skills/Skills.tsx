@@ -4,6 +4,7 @@ import { SkillsProps } from "../components.model";
 import Container from "./Skills.styled";
 import { Component } from "react";
 import Validator from "../../utils/Validator";
+import SubTitle from "../00.common/SubTitle";
 
 interface Props {
   data: SkillsProps;
@@ -51,7 +52,7 @@ class Skills extends Component<Props> {
     return (
       <Container>
         <Inner>
-          <h2>Skills</h2>
+          <SubTitle subtitle="Skills" />
           <Hr />
           <div>
             {this.data.map((specific_skill, idx) => {

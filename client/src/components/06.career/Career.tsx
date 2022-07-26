@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Inner from "../00.common/Inner.styled";
-
+import SubTitle from "../00.common/SubTitle";
+import Hr from "../00.common/Hr.styled";
 const Container = styled.section`
   border: 1px solid red;
 
@@ -11,7 +12,8 @@ function Career() {
   return (
     <Container>
       <Inner>
-        <h2>Career</h2>
+        <SubTitle subtitle="Career" />
+        <Hr />
       </Inner>
     </Container>
   );
