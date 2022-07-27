@@ -27,7 +27,6 @@ interface Props {
 }
 
 function Portfolio({ data: { data } }: Props) {
-  console.log(data);
   return (
     <Container>
       <Inner>
