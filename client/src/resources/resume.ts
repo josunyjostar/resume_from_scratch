@@ -218,8 +218,50 @@ const project2: Portfolio = {
   },
 };
 
+const project3: Portfolio = {
+  leftSection: {
+    period: "2022.02 - 2022.02",
+    institution: "코드스테이츠",
+    order: "퍼스트 프로젝트",
+    setup: "(4인/4주)",
+  },
+  rightSection: {
+    title: "LolInfo",
+    summary: " 롤 전적 검색 사이트",
+    detail:
+      "팀원들이 롤 게임을 좋아해서 시작한 프로젝트며 롤 전적을 검색하여 볼 수 있고 그 데이터를 그래프로 도식화해 직관적인 해석을 하게 만든 웹앱 (*riot-games의 API를 사용해서 목요일에 점검이 있어 저희가 만든 웹앱도 목요일 점검시간에는 사용이 불가합니다.)",
+    url: "https://lolinfo.shop/",
+    github: "https://github.com/codestates/lolinfo",
+    prototype: "https://www.figma.com/file/eQrIx5TRVOLI1ZuBDph8rO/36%EA%B8%B0-2%EC%A3%BC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8?node-id=0%3A1",
+    role: "[팀장,프론트엔드]",
+    skills: "React, Redux, Redux-thunk, Styled-components, D3.js",
+    part: "프로젝트에서 맡은 부분 (프론트엔드 기여도 30% 백엔드 기여도 10%)",
+    desc: [
+      {
+        main: "전적페이지",
+        sub: null,
+      },
+      {
+        main: "승률 원형 그래프 / 가로 세로 막대그래프 (D3.js사용)",
+        sub: null,
+      },
+      {
+        main: "Aws이용한 https 배포",
+        sub: null,
+      },
+    ],
+    learned: [
+      "도메인 발급부터 시작하여 AWS의 자원(EC2, S3, RDS, CloudFront, Route53등)들을 연결하며 내가 연결한 AWS의 아키텍쳐를 그림으로 그릴 수 있게 됨",
+      "D3.js의 기본적인 사용법을 알게됨 (datum, data, exit, enter등 이해하고 사용)",
+      "useState만으로의 상태관리의 불편한 점들을 느껴 Redux를 사용하여 상태관리를 한 곳에서 처리 및 thunk를 사용한 비동기 처리도 할 수 있게 됨 (persist도 적용)",
+      "팀원들 일정관리에 실패하여 팀장으로서 일정관리의 어려움을 알게 됨",
+      "styled-components 사용으로 변수 사용하여 css의 동적으로 렌더링 및 자주 사용할 것 같은 스타일을 컴포넌트로 만들어 상속하여 사용",
+    ],
+  },
+};
+
 const portfolio = {
-  data: [project1, project2],
+  data: [project1, project2, project3],
 };
 
 const data = new Map<string, object>();

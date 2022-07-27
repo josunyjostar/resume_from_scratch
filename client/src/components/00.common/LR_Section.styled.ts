@@ -7,6 +7,7 @@ const LR_Section = styled.section`
     line-height: 1.5;
     .left {
       flex: 1;
+      margin-top: 3px;
       /* border: 1px solid red; */
     }
     .right {
@@ -44,6 +45,7 @@ const LR_Section = styled.section`
       flex-direction: column;
       .left {
         flex: 1;
+        margin-top: 0px;
         > * {
           display: inline-block;
           margin-right: 5px;
