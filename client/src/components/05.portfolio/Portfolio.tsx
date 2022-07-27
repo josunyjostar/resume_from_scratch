@@ -11,7 +11,9 @@ const Container = styled(LR_Section)`
     font-weight: bold;
     margin: 10px 0;
   }
-
+  .skills {
+    background-color: #e1f0e17e;
+  }
   @media screen and (max-width: 767px) {
     .strong {
       font-weight: bold;
@@ -66,7 +68,10 @@ function Portfolio({ data: { data } }: Props) {
                 <Hr />
                 <div className="strong">프로젝트에서 맡은 역할 및 사용한 기술 스택</div>
                 <ul>
-                  <li>{`${role} / ${skills}`}</li>
+                  <li>
+                    {`${role} / `}
+                    <span className="skills">{`${skills}`}</span>
+                  </li>
                 </ul>
                 <div className="strong">{part}</div>
                 <ul>
