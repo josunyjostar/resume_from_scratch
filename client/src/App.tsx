@@ -16,7 +16,6 @@ const RootLayout = styled.div`
 `;
 
 function App() {
-  console.log(process.env.REACT_APP_API_URL);
   return (
     <ThemeProvider theme={Theme}>
       <GlobalStyle />
