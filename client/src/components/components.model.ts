@@ -36,3 +36,23 @@ export interface Education {
 export interface EducationProps {
   data: Array<Education>;
 }
+
+export interface Portfolio {
+  leftSection: { period: string; institution?: string; order?: string | null; setup: string };
+  rightSection: {
+    title: string;
+    summary: string;
+    detail: string;
+    url: string;
+    github: string;
+    prototype: string;
+    role?: string;
+    skills: string;
+    part: string | null;
+    desc: { main: string; sub?: string | null }[] | null;
+    learned: string[];
+  };
+}
+export interface PortfolioProps {
+  data: Array<Portfolio>;
+}

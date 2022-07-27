@@ -4,12 +4,14 @@ const LR_Section = styled.section`
   .content {
     display: flex;
     margin: 20px 0;
+    line-height: 1.5;
     .left {
       flex: 1;
       /* border: 1px solid red; */
     }
     .right {
       flex: 6;
+      margin-left: 30px;
       /* border: 1px solid red; */
       h6 {
         font-size: ${(props) => props.theme.h6FontSize_web};
@@ -36,14 +38,21 @@ const LR_Section = styled.section`
   @media screen and (max-width: 767px) {
     font-size: ${(props) => props.theme.contentfontSize_mobile};
     padding: 0 5px;
+    line-height: 1;
     .content {
       margin: 10px 0;
-      display: flex;
+      flex-direction: column;
       .left {
         flex: 1;
+        > * {
+          display: inline-block;
+          margin-right: 5px;
+          color: tomato;
+        }
       }
       .right {
-        padding-left: 10px;
+        margin-left: 0;
+        padding-left: 0px;
         flex: 4;
         h6 {
           font-size: ${(props) => props.theme.h6FontSize_mobile};

@@ -1,5 +1,5 @@
 import { Header, Contact, Introduction, Skills, Portfolio, Career, Education } from "../components";
-import { HeaderProps, ContactProps, IntroProps, SkillsProps, CareerProps, EducationProps } from "../components/components.model";
+import { HeaderProps, ContactProps, IntroProps, SkillsProps, CareerProps, EducationProps, PortfolioProps } from "../components/components.model";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -32,7 +32,7 @@ function Resume({ data }: Data) {
       <Contact data={data.get("contact")! as ContactProps} />
       <Introduction data={data.get("introduction")! as IntroProps} />
       <Skills data={data.get("skills")! as SkillsProps} />
-      <Portfolio />
+      <Portfolio data={data.get("portfolio")! as PortfolioProps} />
       <Career data={data.get("career")! as CareerProps} />
       <Education data={data.get("education")! as EducationProps} />
     </Container>
