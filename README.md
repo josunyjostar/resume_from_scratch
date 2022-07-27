@@ -1,7 +1,8 @@
 # Resume - CRA 아닌 개발 환경 초기셋팅하여 진행하는 프로젝트
 
-개발 환경 초기 셋팅이라는건
+배포 링크  [[Resume-without-cra]](https://resume-without-cra.shop/)
 
+개발 환경 초기 셋팅이라는건
 - typescript, babel, webpack, ESLint, prettier, react 셋팅을 가르킴
 
 [Usage]
