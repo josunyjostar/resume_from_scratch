@@ -37,7 +37,7 @@ module.exports = {
       template: path.resolve(__dirname, "..", "./src/index.html"),
     }),
     new CopyPlugin({
-      patterns: [{ from: "public", to: "static" }],
+      patterns: [{ from: "public", to: "./" }],
     }),
     new Dotenv(),
   ],
