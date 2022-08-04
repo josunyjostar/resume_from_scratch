@@ -13,17 +13,19 @@ const contact = {
 };
 
 const intro1: string =
-  "SPA 웹 포트폴리오를 두 번 진행해보았고 팀장의 역할을 맡았습니다. 두 프로젝트 모두 일정 내에 마무리를 지을 수 있도록 책임을 다했습니다. 프론트와 백엔드 모두 흥미를 느끼지만, 프론트엔드에 좀 더 자신감이 있습니다. 특히 UI 컴포넌트 만드는 것을 잘합니다.";
+  "SPA 웹 포트폴리오를 4번 진행해보았습니다 (팀2 개인2 *개인프로젝트 1개는 진행중입니다). 팀 프로젝트에서는 팀장의 역할을 맡았고 두 프로젝트 모두 일정 내에 마무리를 지을 수 있도록 책임을 다했습니다. 프론트와 백엔드 모두 흥미를 느끼지만, 프론트엔드에 더 자신감이 있습니다. 특히 UI 컴포넌트와 만드는 것을 잘합니다.";
 const intro2: string =
   "담당한 업무의 결과물을 다듬는 걸 좋아합니다. 부여된 업무만 마치는 것보다는 어떻게 하면 더 편하게 쓸지 어떻게 하면 같은 팀원들이 이 컴포넌트를 더 쉽게 사용할 수 있을까 하는 능동적인 고민을 하는 것이 본인의 성장에 도움이 된다고 느낍니다.";
 const intro3: string =
-  "마지막으로 새로운 것을 배움에 있어 즐거움을 느끼고 가능한한 알고서 사용하고자 노력합니다. 게임하다가 알고리즘이 자꾸 떠올라서 게임을끄고 알고리즘 공부한 적도 있습니다. 배울수록 모르는 것이 많아 좌절할 때도 있지만 자주 사용하면서 그 의미를 깨달을 때 성장했다고 느낍니다. 팀에 들어 갔을 때 같이 일할 수 있는 사람인가? 라는 주제에 대해서 중요하게 생각하기 때문에 믿을 수 있는 동료가 되고자 꾸준히 공부하고 있습니다.";
+  "새로운 것을 배움에 있어 즐거움을 느끼고 가능한 한 알고서 사용하고자 노력합니다. 게임을 하다가 알고리즘이 자꾸 떠올라서 게임을 끄고 알고리즘 공부한 적도 있습니다. 배울수록 모르는 것이 많아 좌절할 때도 있지만 자주 사용하면서 그 의미를 깨달을 때 성장했다고 느낍니다. ";
+
+const intro4: string = "마지막으로 팀에 들어갔을 때 믿고서 같이 일 할수있는 동료인가? 라는 주제에 대해서 중요하게 생각하기 때문에 믿을 수 있는 동료가 되고자 꾸준히 공부하고 있습니다.";
 
 const introduction = {
-  data: [intro1, intro2, intro3],
+  data: [intro1, intro2, intro3, intro4],
 };
 
-const frontend: string[] = ["JavaScript", "React", "Reduc", "Zustand", "Styled-Components", "HTML5", "Css3", "Webpack", "TypeScript", "Babel"];
+const frontend: string[] = ["JavaScript", "React", "Redux", "Zustand", "Styled-Components", "HTML5", "Css3", "Webpack", "TypeScript", "Babel"];
 const backend: string[] = ["Node.js", "Express.js", "Jwt", "Cookie", "Mysql"];
 const deploy: string[] = ["AWS EC2", "S3", "RDS", "CloudFront", "Route53"];
 const etc: string[] = ["Git", "VS Code"];
@@ -146,6 +148,34 @@ const education = {
   data: [edu1, edu2, edu3, edu4],
 };
 
+const projectQuiz: Portfolio = {
+  leftSection: {
+    period: "22.07.30 - 22.08.04",
+    institution: "개인 프로젝트",
+    order: null,
+    setup: "1인",
+  },
+  rightSection: {
+    title: "Simple Quiz",
+    summary: "서류 합격 후 받은 과제를 제작 중",
+    detail: "채용 과정 중 기업에서 받은 과제로 간단한 퀴즈 웹앱입니다.",
+    url: "https://quiz-edu.shop/",
+    github: "https://github.com/josunyjostar/quiz",
+    prototype: "https://github.com/josunyjostar/quiz/wiki",
+    role: "[개인 프로젝트]",
+    skills: "React, Styled-components, Typescript, Zustand, react-chartjs-2, @testing-library/react",
+    part: null,
+    desc: null,
+    learned: [
+      "이벤트 델리게이션을 프로젝트에 적용할 수 있게 되었음 (이벤트 버블링 막기도 적극적으로 활용)",
+      "typescript의 타입가드, 타입 캐스팅을 적극적으로 활용하게 되었음",
+      "figma 같은 기획서 없이 시작하다보니 html 태그가 누더기처럼 붙게되어 갈수록 레이아웃 잡는게 힘들어진다는 걸 알게됨",
+      "@testing-library/react를 사용하여 단위 테스트 개발을 할 수 있게 됨",
+      "브라우저 렌더링 파이브라인의 이해도가 높아져서 css에서 지양해야 할 속성과 지향해야 할 속성을 알게 됨",
+    ],
+  },
+};
+
 const project1: Portfolio = {
   leftSection: {
     period: "2022.07 - 2022.07",
@@ -261,7 +291,7 @@ const project3: Portfolio = {
 };
 
 const portfolio = {
-  data: [project1, project2, project3],
+  data: [projectQuiz, project1, project2, project3],
 };
 
 const data = new Map<string, object>();
