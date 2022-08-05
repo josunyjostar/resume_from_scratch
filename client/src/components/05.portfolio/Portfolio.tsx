@@ -32,7 +32,7 @@ function Portfolio({ data: { data } }: Props) {
       <Inner>
         <SubTitle subtitle="Portfolio" />
         <Hr />
-        {data.map(({ leftSection: { period, institution, order, setup }, rightSection: { title, summary, detail, url, github, prototype, role, skills, part, desc, learned } }, i) => {
+        {data.map(({ leftSection: { period, institution, order, setup }, rightSection: { title, summary, url, github, prototype, role, skills, part, desc, learned } }, i) => {
           return (
             <div key={i} className="content">
               <div className="left">
@@ -42,13 +42,12 @@ function Portfolio({ data: { data } }: Props) {
                 <div>{setup}</div>
               </div>
               <div className="right">
-                <h6>{title}</h6>
-                <p>
-                  {`프로젝트 요약: ${summary} `}
-                  <span>
-                    (
+                <h6>
+                  {title}
+                  <span className="link">
+                    &nbsp;(
                     <a href={url} target="_blank">
-                      배포
+                      {" 배포"}
                     </a>
                     <span> | </span>
                     <a href={github} target="_blank">
@@ -56,14 +55,12 @@ function Portfolio({ data: { data } }: Props) {
                     </a>
                     <span> | </span>
                     <a href={prototype} target="_blank">
-                      기획서
+                      {" 기획서 "}
                     </a>
                     )
                   </span>
-                </p>
-                <ul>
-                  <li>{detail}</li>
-                </ul>
+                </h6>
+                <p>{`프로젝트 요약: ${summary} `}</p>
                 <Hr />
                 <div className="strong">프로젝트에서 맡은 역할 및 사용한 기술 스택</div>
                 <ul>

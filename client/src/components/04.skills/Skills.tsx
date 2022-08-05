@@ -20,13 +20,10 @@ enum SKILL {
 class Skills extends Component<Props> {
   @Validator.getInst().ArrayInitRequired
   private data: string[][];
-  @Validator.getInst().Required
-  private parenthesis: string;
 
   constructor(props: Props) {
     super(props);
     this.data = props.data.data;
-    this.parenthesis = props.data.parenthesis;
     // console.log(typeof this.data, Array.isArray(this.data));
     // console.log(typeof this.parenthesis);
   }
@@ -65,9 +62,6 @@ class Skills extends Component<Props> {
                 </div>
               );
             })}
-            <p>
-              (<span>{this.parenthesis}</span>)
-            </p>
           </div>
         </Inner>
       </Container>

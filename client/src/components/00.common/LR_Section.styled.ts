@@ -14,6 +14,13 @@ const LR_Section = styled.section`
       flex: 6;
       margin-left: 30px;
       /* border: 1px solid red; */
+
+      .link {
+        a {
+          color: ${(props) => props.theme.subjectColor};
+        }
+      }
+
       h6 {
         font-size: ${(props) => props.theme.h6FontSize_web};
         font-weight: bold;

@@ -8,7 +8,7 @@ interface Props {
 }
 
 function Contact({ data }: Props) {
-  const { mobile, email, github, github_desc, blog } = data;
+  const { mobile, email, github, blog } = data;
   return (
     <Container>
       <Inner>

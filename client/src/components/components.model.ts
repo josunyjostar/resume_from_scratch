@@ -7,7 +7,6 @@ export interface ContactProps {
   mobile: string;
   email: string;
   github: string;
-  github_desc: string;
   blog: string;
 }
 export interface IntroProps {
@@ -16,7 +15,6 @@ export interface IntroProps {
 
 export interface SkillsProps {
   data: Array<string[]>;
-  parenthesis: string;
 }
 
 interface Career {
@@ -42,7 +40,6 @@ export interface Portfolio {
   rightSection: {
     title: string;
     summary: string;
-    detail: string;
     url: string;
     github: string;
     prototype: string;

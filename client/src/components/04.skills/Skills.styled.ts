@@ -8,26 +8,10 @@ const Container = styled.section`
     }
   }
 
-  p {
-    margin-top: 8px;
-    margin-bottom: 0;
-    span {
-      font-size: 13px;
-      color: tomato;
-    }
-  }
-
   @media screen and (max-width: 767px) {
     font-size: ${(props) => props.theme.contentfontSize_mobile};
     .part {
       margin-top: 6px;
-    }
-
-    p {
-      margin-top: 5px;
-      span {
-        font-size: 10px;
-      }
     }
   }
 
@@ -35,15 +19,6 @@ const Container = styled.section`
     font-size: ${(props) => props.theme.contentfontSize_tablet};
     .part {
       margin-top: 8px;
-    }
-
-    p {
-      margin-top: 8px;
-      margin-bottom: 0;
-      span {
-        font-size: 13px;
-        color: tomato;
-      }
     }
   }
 `;
